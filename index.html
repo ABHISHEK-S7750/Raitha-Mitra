@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description
+      content="Raitha Mitra (ರೈತ ಮಿತ್ರ) — an informational awareness website for Indian farmers with reference crop prices, fertilizer MRP guidance, and helpline support."
+    />
+    <title>Raitha Mitra (ರೈತ ಮಿತ್ರ)</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#home" data-i18n="skipToContent">Skip to content</a>
+
+    <!-- Header (Sticky) -->
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <div class="brand" aria-label="Raitha Mitra">
+          <div class="logo-mark">
+            <img src="assets/logo.png" alt="Raitha Mitra logo">
+          </div>
+          <div class="brand-text">
+            <div class="brand-title" data-i18n="brandTitle">Raitha Mitra</div>
+            <div class="brand-subtitle" data-i18n="brandSubtitle">Farmer Awareness Website</div>
+          </div>
+        </div>
+
+        <nav class="nav" aria-label="Primary">
+          <a class="nav-link" href="#home" data-i18n="navHome">Home</a>
+          <a class="nav-link" href="#prices" data-i18n="navCropPrices">Crop Prices</a>
+          <a class="nav-link" href="#fertilizer" data-i18n="navFertilizerMrp">Fertilizer MRP</a>
+          <a class="nav-link" href="#help" data-i18n="navFarmerHelp">Farmer Help</a>
+          <a class="nav-link" href="#contact" data-i18n="navContact">Contact</a>
+        </nav>
+
+        <div class="lang-toggle" role="group" aria-label="Language toggle">
+          <button class="lang-btn is-active" type="button" data-lang="en">ENGLISH</button>
+          <button class="lang-btn" type="button" data-lang="kn">ಕನ್ನಡ</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Home / Hero Section -->
+      <section class="hero" id="home">
+        <div class="hero-slider" aria-label="Image slider">
+          <div class="slides" id="slides">
+            <div class="slide is-active" data-slide="0">
+              <div class="slide-bg slide-bg-1" aria-hidden="true"></div>
+              <!-- Real photo: farmer ploughing field -->
+              <img
+                class="slide-photo"
+                src="/assets/farmer-ploughing.jpeg"
+                alt="Farmer ploughing an Indian field"
+              />
+              <div class="slide-overlay"></div>
+            </div>
+            <div class="slide" data-slide="1">
+              <div class="slide-bg slide-bg-2" aria-hidden="true"></div>
+              <!-- Real photo: tractor working on farmland -->
+              <img
+                class="slide-photo"
+                src="assets/tractor-field.jpeg".jpg"
+                alt="Tractor working on a green farmland"
+              />
+              <div class="slide-overlay"></div>
+            </div>
+            <div class="slide" data-slide="2">
+              <div class="slide-bg slide-bg-3" aria-hidden="true"></div>
+              <!-- Real photo: harvesting / cutter machine -->
+              <img
+                class="slide-photo"
+                src="/assets/crops.jpeg"
+                alt="all crops in the warehouse"
+              />
+              <div class="slide-overlay"></div>
+            </div>
+            <div class="slide" data-slide="3">
+              <div class="slide-bg slide-bg-4" aria-hidden="true"></div>
+              <!-- Real photo: paddy field with birds -->
+              <img
+                class="slide-photo"
+                src="/assets/paddy-crop.jpeg"
+                alt="Paddy fields in rural India"
+              />
+              <div class="slide-overlay"></div>
+            </div>
+          </div>
+
+          <div class="container hero-content">
+            <div class="hero-card reveal">
+              <h1 class="hero-title" data-i18n="heroTitle">ರೈತ ಮಿತ್ರ (Raitha Mitra)</h1>
+              <p class="hero-lead" data-i18n="heroLead">
+                ಬೆಳೆ ಬೆಲೆ ಮತ್ತು ಗೊಬ್ಬರ MRP ಜಾಗೃತಿಗಾಗಿ ನಿರ್ಮಿತವಾದ ರೈತ ಸ್ನೇಹಿ ಮಾಹಿತಿ ವೆಬ್‌ಸೈಟ್.
+              </p>
+
+              <div class="hero-badges">
+                <span class="badge" data-i18n="badgeNoLive">No live prices (reference only)</span>
+              
+                <span class="badge" data-i18n="badgeFarmerFriendly">Farmer-friendly, User Friendly</span>
+              </div>
+
+              
+            </div>
+
+            <div class="hero-dots" role="tablist" aria-label="Slider dots">
+              <button class="dot is-active" type="button" data-dot="0" aria-label="Slide 1"></button>
+              <button class="dot" type="button" data-dot="1" aria-label="Slide 2"></button>
+              <button class="dot" type="button" data-dot="2" aria-label="Slide 3"></button>
+              <button class="dot" type="button" data-dot="3" aria-label="Slide 4"></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="container hero-note reveal">
+          <div class="note">
+            <div class="note-icon" aria-hidden="true">
+              <!-- info icon -->
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <path d="M12 10v7" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                <path d="M12 7h.01" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+              </svg>
+            </div>
+            <p class="note-text" data-i18n="heroNote">
+              Prices shown below are sample “APMC reference prices” for awareness only. Actual market prices can vary by location and date.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Daily Crop Prices -->
+      <section class="section" id="prices">
+        <div class="container">
+          <div class="section-head reveal">
+            <h2 class="section-title" data-i18n="pricesTitle">Daily Crop Prices (Reference)</h2>
+            <p class="section-subtitle" data-i18n="pricesSubtitle">
+              Filter by category. Prices are indicative ₹ per Quintal for farmer awareness.
+            </p>
+          </div>
+
+          <div class="filters reveal" id="categoryFilters" aria-label="Category filters">
+            <!-- injected by JS -->
+          </div>
+
+          <div class="grid grid-cards reveal" id="cropGrid" aria-label="Crop price cards">
+            <!-- injected by JS -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Fertilizer MRP -->
+      <section class="section section-alt" id="fertilizer">
+        <div class="container">
+          <div class="section-head reveal">
+            <h2 class="section-title" data-i18n="fertTitle">Fertilizer MRP (Govt. Approved)</h2>
+            <p class="section-subtitle" data-i18n="fertSubtitle">
+              Check MRP printed on the bag. Don’t pay extra to middlemen.
+            </p>
+          </div>
+
+          <div class="grid grid-cards reveal" id="fertilizerGrid" aria-label="Fertilizer cards">
+            <!-- injected by JS -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Farmer Awareness -->
+      <section class="section" id="awareness">
+        <div class="container">
+          <div class="section-head reveal">
+            <h2 class="section-title" data-i18n="awareTitle">Farmer Awareness</h2>
+            <p class="section-subtitle" data-i18n="awareSubtitle">
+              Simple tips to protect your income and avoid overcharging.
+            </p>
+          </div>
+
+          <div class="aware-grid">
+            <article class="aware-card reveal">
+              <div class="aware-icon" aria-hidden="true">
+                <span class="icon-bubble">₹</span>
+              </div>
+              <h3 class="aware-title" data-i18n="awareMspTitle">MSP Awareness</h3>
+              <p class="aware-text" data-i18n="awareMspText">
+                Know MSP (Minimum Support Price) and compare with local rates before selling.
+              </p>
+            </article>
+
+            <article class="aware-card reveal">
+              <div class="aware-icon" aria-hidden="true">
+                <span class="icon-bubble">MRP</span>
+              </div>
+              <h3 class="aware-title" data-i18n="awareMrpTitle">Check Fertilizer MRP on Bag</h3>
+              <p class="aware-text" data-i18n="awareMrpText">
+                MRP, batch no., and weight are printed on the bag. Don’t buy if label is missing/altered.
+              </p>
+            </article>
+
+            <article class="aware-card reveal">
+              <div class="aware-icon" aria-hidden="true">
+                <span class="icon-bubble">✓</span>
+              </div>
+              <h3 class="aware-title" data-i18n="awareMiddlemenTitle">Avoid Overcharging</h3>
+              <p class="aware-text" data-i18n="awareMiddlemenText">
+                Ask for bill/receipt. If someone demands extra money, report to helplines.
+              </p>
+            </article>
+
+            <article class="aware-card reveal">
+              <div class="aware-icon" aria-hidden="true">
+                <span class="icon-bubble">⚖</span>
+              </div>
+              <h3 class="aware-title" data-i18n="awareRightsTitle">Basic Farmer Rights</h3>
+              <p class="aware-text" data-i18n="awareRightsText">
+                You have the right to correct weight/quality check, transparent pricing, and written receipts.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Government & Customer Support -->
+      <section class="section section-alt" id="help">
+        <div class="container">
+          <div class="section-head reveal">
+            <h2 class="section-title" data-i18n="helpTitle">Government & Customer Support</h2>
+            <p class="section-subtitle" data-i18n="helpSubtitle">
+              Tap to call. Keep district and crop details ready.
+            </p>
+          </div>
+
+          <div class="support-grid">
+            <a class="support-card reveal" href="tel:18001801551">
+              <div class="support-top">
+                <div class="support-icon" aria-hidden="true">📞</div>
+                <div class="support-name" data-i18n="helpKisanCallCenter">Kisan Call Center</div>
+              </div>
+              <div class="support-number">1800-180-1551</div>
+              <div class="support-note" data-i18n="helpKisanNote">For agriculture advice & queries</div>
+            </a>
+
+            <a class="support-card reveal" href="tel:01123381092">
+              <div class="support-top">
+                <div class="support-icon" aria-hidden="true">📱</div>
+                <div class="support-name" data-i18n="helpPmKisan">PM-Kisan Helpline</div>
+              </div>
+              <div class="support-number">011-23381092</div>
+              <div class="support-note" data-i18n="helpPmKisanNote">For PM-Kisan scheme support</div>
+            </a>
+
+            <a class="support-card reveal" href="tel:1551">
+              <div class="support-top">
+                <div class="support-icon" aria-hidden="true">🏛</div>
+                <div class="support-name" data-i18n="helpAgriDept">Agriculture Dept Support</div>
+              </div>
+              <div class="support-number">1551</div>
+              <div class="support-note" data-i18n="helpAgriDeptNote">State agriculture help (where available)</div>
+            </a>
+
+            <a class="support-card reveal" href="#contact">
+              <div class="support-top">
+                <div class="support-icon" aria-hidden="true">🛠</div>
+                <div class="support-name" data-i18n="helpSiteSupport">Website Customer Care</div>
+              </div>
+              <div class="support-number" data-i18n="helpSiteSupportNumber">See contact section</div>
+              <div class="support-note" data-i18n="helpSiteSupportNote">Help using this website</div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="section-head reveal">
+            <h2 class="section-title" data-i18n="contactTitle">Contact</h2>
+            <p class="section-subtitle" data-i18n="contactSubtitle">
+              This is an informational awareness website. Use helplines for official support.
+            </p>
+          </div>
+
+          <div class="contact-card reveal">
+            <div class="contact-row">
+              <div class="contact-label" data-i18n="contactEmailLabel">Email</div>
+              <div class="contact-value">
+                <a href="mailto:support@raithamitra.com" class="link">support@raithamitra.com</a>
+              </div>
+            </div>
+            <div class="contact-row">
+              <div class="contact-label" data-i18n="contactHoursLabel">Hours</div>
+              <div class="contact-value" data-i18n="contactHoursValue">Mon–Sat, 9:00 AM – 6:00 PM</div>
+            </div>
+            <div class="contact-row">
+              <div class="contact-label" data-i18n="contactNoteLabel">Note</div>
+              <div class="contact-value" data-i18n="contactNoteValue">
+                We show only sample “reference” data for awareness. No real-time claims.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footer-title" data-i18n="footerTitle">Raitha Mitra</div>
+        <p class="footer-disclaimer" data-i18n="footerDisclaimer">
+          Prices shown are indicative APMC reference prices for farmer awareness only. Actual market prices may vary by location and date.
+        </p>
+        <p class="footer-copy" data-i18n="footerCopy">© 2026 Raitha Mitra — Informational Awareness Website</p>
+      </div>
+    </footer>
+
+    <script src="./lang.js"></script>
+    <script src="./app.js" defer></script>
+  </body>
+</html>
