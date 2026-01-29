@@ -95,6 +95,7 @@ a {
   border-radius: 12px;
   overflow: hidden;
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: center;
   background: #ffffff;
@@ -842,10 +843,21 @@ a {
   .nav-link:hover {
     background: rgba(213, 238, 221, 1);
   }
-}
-@media (max-width: 768px) {
 
-  /* Make dashboard nav text slightly smaller */
+  .logo-mark {
+    width: 46px;
+    height: 46px;
+  }
+
+  .brand-title {
+    font-size: 1.2rem;
+  }
+
+  .brand-subtitle {
+    font-size: 0.75rem;
+  }
+
+/* Make dashboard nav text slightly smaller */
   .nav-link {
     font-size: 0.82rem;     /* slightly smaller, still readable */
     padding: 8px 12px;      /* compact dashboard buttons */
